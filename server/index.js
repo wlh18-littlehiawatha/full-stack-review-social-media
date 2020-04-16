@@ -30,8 +30,8 @@ app.get('/auth/user', authCtrl.getUser)
 //# Posts endpoints
 app.get('/api/posts', postCtrl.getPosts)
 app.post('/api/posts', postCtrl.addPost)
-app.put('/api/posts/:id', postCtrl.editPost)
-app.delete('/api/posts/:id', postCtrl.deletePost)
+app.put('/api/posts/:post_id', postCtrl.editPost)
+app.delete('/api/posts/:post_id', postCtrl.deletePost)
 massive({
   connectionString: CONNECTION_STRING,
   ssl: {
