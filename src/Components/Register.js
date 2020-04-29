@@ -44,6 +44,7 @@ class Register extends Component {
                 maxLength="100"
                 placeholder="Enter Email"
                 name="email"
+                // value={this.state.whatever value is}
                 onChange={(e) => {
                   this.handleInput(e)
                 }}
